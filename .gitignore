@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+BasePruebaAval.xlsx
+data_salida.csv
+*.pbix
+BasePruebaAval.txt
