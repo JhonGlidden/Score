@@ -5,8 +5,9 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import train_test_split
 from imblearn.over_sampling import RandomOverSampler
-import sys
-sys.path.append('../src/data')
+#import sys
+
+#sys.path.append('../src/data')
 from clean_data import Clean_data 
 
 class Train_data:
