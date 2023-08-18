@@ -11,20 +11,18 @@ from imblearn.over_sampling import RandomOverSampler
 from clean_data import Clean_data 
 
 class Train_data:
-    def __init__(self, df_path):
-        self.df_path = df_path
+    def __init__(self, df):
+        self.df = df
 
-    def read_data(self):
-        # lectura de datos
-        self.df=pd.read_csv(self.df_path, delimiter='\t')
-
+    # def read_data(self):
+    #     # lectura de datos
+    #     self.df=pd.read_csv(self.df_path, delimiter='\t')
     def clean_data(self):
         '''
         Limpieza de los datos, arreglamos los formatos de los datos 
         y corregimos por uno y cero 
         '''
         data_limpia=Clean_data(self.df)
-        data_limpia.change_type_date('Fecha')
         data_limpia.change_type_float('CANTIDAD_TOTAL_AVANCES')
         data_limpia.change_type_float('ANTIGUEDAD_TARJETA_ANIOS')
         data_limpia.change_type_float('MAXIMO_NUM_DIAS_VENCIDO')
@@ -32,6 +30,7 @@ class Train_data:
         data_limpia.change_type_float('PROMEDIO_DIAS_SOBREGIRO_CC')
         data_limpia.change_type_float('EDAD')
         data_limpia.change_type_float('NUM_TC_SIST_FIM')
+        data_limpia.change_type_date('Fecha')
         data_limpia.change_yes_no('FORMA_PAGO')
         data_limpia.change_yes_no('MARCA_CUENTA_CORRIENTE')
         data_limpia.change_yes_no('MARCA_CUENTA_AHORROS')
@@ -69,8 +68,10 @@ class Train_data:
 
 
 
-# x=Train_data("./data/raw/BasePruebaAval.txt")
-# x.read_data()
+
+# entrada=pd.read_csv("./data/raw/BasePruebaAval.txt",delimiter='\t')
+# x=Train_data(entrada)
+# #x.read_data()
 # x.clean_data()
 # x.delete_col('Fecha')
 # x.delete_col('CODIGO_ID')
