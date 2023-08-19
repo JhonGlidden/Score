@@ -3,3 +3,4 @@ data/output/data_salida.csv
 *.pbix
 data/raw/BasePruebaAval.txt
 __pycache__/
+myenv/
