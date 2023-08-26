@@ -33,7 +33,7 @@ class Clean_data:
 
 
 
-# data_raw=pd.read_csv("./data/raw/BasePruebaAval.txt", delimiter='\t')
+# data_raw=pd.read_csv("./data/raw/BasePrueba.txt", delimiter='\t')
 # data_limpia=Clean_data(data_raw)
 # data_limpia.change_type_date('Fecha')
 # data_limpia.change_type_float('CANTIDAD_TOTAL_AVANCES')

@@ -102,7 +102,7 @@ class Predict_model_App:
         '''
         self.value_predict=self.modelo_random_forest.predict(self.df)
         self.value_predict=self.value_predict.tolist()
-        self.prob_predict=self.modelo_random_forest.predict_proba(self.df)
+        self.prob_predict=self.modelo_random_forest.predict_proba(self.df)[:,1]
         self.prob_predict=self.prob_predict.tolist()
 
     def save_predict(self):
@@ -115,7 +115,7 @@ class Predict_model_App:
 
 
 
-# entrada=pd.read_csv("./data/raw/BasePruebaAval.txt",delimiter='\t')
+# entrada=pd.read_csv("./data/raw/BasePrueba.txt",delimiter='\t')
 # x=Predict_model_App(entrada)
 # x.one_encoding_transform()
 # x.load_model()

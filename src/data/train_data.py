@@ -69,7 +69,7 @@ class Train_data:
 
 
 
-# entrada=pd.read_csv("./data/raw/BasePruebaAval.txt",delimiter='\t')
+# entrada=pd.read_csv("./data/raw/BasePrueba.txt",delimiter='\t')
 # x=Train_data(entrada)
 # #x.read_data()
 # x.clean_data()
