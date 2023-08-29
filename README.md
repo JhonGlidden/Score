@@ -1,3 +1,30 @@
+
+# Estructura de Mlops
+C:.
+- .gitignore
+- app.py
+- app_predict.py
+- README.md
+- requirements.txt
+- data
+  - output
+    - cat.csv
+  - processed
+  - raw
+    - BasePrueba.txt
+- model
+  - modelo_entrenado.joblib
+- notebooks
+  - Eda.ipynb
+- src
+  - data
+    - balance_data.py
+    - clean_data.py
+    - train_data.py
+  - models
+    - model.py
+    - predict_model.py
+
 # Modelo
 ## Introducción y Objetivos:
 El presente proyecto tiene como objetivo principal crear un modelo de predicción y llevarlo a producción. Por esta razón, se ha optado por implementar una estructura de MLops para facilitar el proceso. Cada script contiene clases que permiten realizar diferentes tareas, como el preprocesamiento, limpieza, encoding y predicción de la data, así como el análisis estadístico que se encuentra en la carpeta "notebook".
@@ -17,35 +44,5 @@ También existen clases desbalanceadas, por lo que se ha tomado la decisión de 
 ## Ajuste de Hiperparámetros:
 Para mejorar el desempeño del modelo, se ha realizado un ajuste de hiperparámetros utilizando técnicas de búsqueda exhaustiva y validación cruzada. Mediante este proceso de tunear los hiperparámetros, se ha buscado obtener el conjunto óptimo de valores que permita maximizar la precisión y el rendimiento general del modelo.
 
-# Estructura de Mlops
-
-C:.
-├── .gitignore
-├── app.py
-├── app_predict.py
-├── README.md
-├── requirements.txt
-│
-├── data
-│   ├── output
-│   │   └── cat.csv
-│   ├── processed
-│   │
-│   └── raw
-│       └── BasePrueba.txt
-│
-├── model
-│   └── modelo_entrenado.joblib
-│
-├── notebooks
-│   └── Eda.ipynb
-│
-└── src
-    ├── data
-    │   ├── balance_data.py
-    │   ├── clean_data.py
-    │   └── train_data.py
-    │
-    └── models
-        ├── model.py
-        └── predict_model.py
+## Entornos virtuales
+Se ha usado un entorno virtual de venv de python, requirements.txt se encuentran las dependencias para correr el modelo.
