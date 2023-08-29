@@ -1,0 +1,30 @@
+C:.
+|   .gitignore
+|   app.py
+|   app_predict.py
+|   README.md
+|   requirements.txt
+|   
++---data
+|   +---output
+|   |	|   cat.csv     
+|   +---processed
+|   |
+|   +---raw
+|       |   BasePrueba.txt
+|           
++---model
+|       modelo_entrenado.joblib
+|                     
++---notebooks
+|       Eda.ipynb
+|       
++---src
+    +---data
+    |   |   balance_data.py
+    |   |   clean_data.py
+    |   |   train_data.py     
+    +models
+        |   model.py
+        |   predict_model.py
+
